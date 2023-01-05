@@ -1,0 +1,37 @@
+private _modFolder = configSourceMod (configFile >> "CfgPatches" >> "ZEPHIK_OPTRE_Compat");
+private _itemConfigs = "configSourceMod _x isEqualTo _modFolder" configClasses (configFile >> "CfgWeapons");
+
+diag_log text "========== EXPORTING ITEMS ==========";
+
+{
+    private _classname = configName _x;
+    private _displayName = getText (_x >> "displayName");
+
+    private _configPatch = configSourceAddonList _x select 0;
+
+    (_classname call BIS_fnc_itemType) params ["_category", "_type"];
+    diag_log text format ["{§%1§,{0,0,0,0}},", _classname];
+    if (_category isEqualTo "Weapon") then {
+        private _optic = getText (_x >> "LinkedItems" >> "LinkedItemsOptic" >> "item");
+        if (_optic != "") then {
+            diag_log text format ["            Optic:          %1", _optic];
+        };
+
+        private _pointer = getText (_x >> "LinkedItems" >> "LinkedItemsAcc" >> "item");
+        if (_pointer != "") then {
+            diag_log text format ["            Pointer:        %1", _pointer];
+        };
+
+        private _silencer = getText (_x >> "LinkedItems" >> "LinkedItemsMuzzle" >> "item");
+        if (_silencer != "") then {
+            diag_log text format ["            Silencer:       %1", _silencer];
+        };
+
+        private _bipod = getText (_x >> "LinkedItems" >> "LinkedItemsUnder" >> "item");
+        if (_bipod != "") then {
+            diag_log text format ["            Bipod:          %1", _bipod];
+        };
+    };
+} forEach _itemConfigs;
+
+diag_log text "========== EXPORTING ITEMS END ==========";
