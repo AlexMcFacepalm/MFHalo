@@ -1,3 +1,15 @@
+
+class CfgCommunicationMenu
+{
+
+	#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
+
+};
+
+#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
+#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
+
+
 #include "version.hpp"
 #define QUOT(s) #s
 
@@ -114,15 +126,3 @@ use_paradigm_init = 1;
 // VN HAM init
 #include "config\init.hpp"
 
-
-///
-
-class CfgCommunicationMenu
-{
-
-	#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
-
-};
-
-#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
-#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
