@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=549;
+	toggles=1573;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=1437;
+		nextID=1672;
 	};
 	class LayerIndexProvider
 	{
-		nextID=468;
+		nextID=506;
 	};
 	class Camera
 	{
-		pos[]={9675.9072,39.248852,1956.2479};
-		dir[]={0.5826205,-0.34770927,0.7346099};
-		up[]={0.21606445,0.9376024,0.27242962};
-		aside[]={0.78349835,0,-0.62139398};
+		pos[]={9730.2129,25.188719,2017.597};
+		dir[]={0.65436381,-0.40213123,-0.64038944};
+		up[]={0.287402,0.91558206,-0.28126436};
+		aside[]={-0.69943428,-1.4901161e-008,-0.71469712};
 	};
 };
 binarizationWanted=0;
@@ -75,13 +75,14 @@ addons[]=
 	"Scythe",
 	"OPTRE_UNSC_Structure_Military",
 	"A3_Structures_F_Naval_Piers",
-	"OPTRE_Buildings_Street_Objects"
+	"OPTRE_Buildings_Street_Objects",
+	"OPTRE_Frigate"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=44;
+		items=45;
 		class Item0
 		{
 			className="modules_f_vietnam";
@@ -331,6 +332,11 @@ class AddonsMetaData
 			className="OPTRE_Buildings_Street_Objects";
 			name="OPTRE_Buildings_Street_Objects";
 		};
+		class Item44
+		{
+			className="OPTRE_Frigate";
+			name="OPTRE_Frigate";
+		};
 	};
 };
 class DynamicSimulation
@@ -506,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=50;
+		items=51;
 		class Item0
 		{
 			dataType="Layer";
@@ -2489,13 +2495,14 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9717,5.8699999,2034};
-									angle=1.5470055;
+									angle=1.5470072;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
 										sizeA=10;
 										sizeB=10;
 										sizeC=10;
+										repeatable=1;
 										activationBy="ANY";
 										isRectangle=1;
 									};
@@ -2506,13 +2513,14 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9717,5.8699999,2073};
-									angle=1.5470055;
+									angle=1.5470072;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
 										sizeA=10;
 										sizeB=10;
 										sizeC=10;
+										repeatable=1;
 										activationBy="ANY";
 										isRectangle=1;
 									};
@@ -2523,13 +2531,14 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9716,5.8699999,2113};
-									angle=1.5938569;
+									angle=1.5938518;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
 										sizeA=10;
 										sizeB=10;
 										sizeC=10;
+										repeatable=1;
 										activationBy="ANY";
 										isRectangle=1;
 									};
@@ -2540,13 +2549,14 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9717,5.8699999,2151};
-									angle=1.5470055;
+									angle=1.5470072;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
 										sizeA=10;
 										sizeB=10;
 										sizeC=10;
+										repeatable=1;
 										activationBy="ANY";
 										isRectangle=1;
 									};
@@ -5702,7 +5712,7 @@ class Mission
 				class Item10
 				{
 					dataType="Marker";
-					position[]={9736.125,5.8699999,1963.375};
+					position[]={9773.5,5.8699999,1981};
 					name="supply_officer_initial_1";
 					text="Initial Supply Officer 1";
 					type="Empty";
@@ -5712,7 +5722,7 @@ class Mission
 				class Item11
 				{
 					dataType="Marker";
-					position[]={9732.875,5.8699999,1986.25};
+					position[]={9760.625,5.8699999,1981.125};
 					name="supply_drop_initial_1";
 					text="Initial Supply Drop 1";
 					type="Empty";
@@ -6637,6 +6647,22 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13035.75,1675,328.5};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1601;
+			type="OPTRE_Frigate_UNSC";
+			atlOffset=1700;
 		};
 	};
 	class Connections

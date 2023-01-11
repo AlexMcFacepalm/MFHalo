@@ -4,6 +4,7 @@ class CfgFunctions
 	#include "..\paradigm\server\functions.hpp"
 	#include "..\scripts\GOM\functions\GOM_fnc_functions.hpp"
 
+
 	class vn_mf
 	{
 		class core

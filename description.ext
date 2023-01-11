@@ -1,14 +1,4 @@
 
-class CfgCommunicationMenu
-{
-
-	#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
-
-};
-
-#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
-#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
-
 
 #include "version.hpp"
 #define QUOT(s) #s
@@ -115,6 +105,18 @@ class CfgDebriefing
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };
+
+
+class CfgCommunicationMenu
+{
+
+	#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
+
+};
+
+#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
+#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
+
 
 //Show melee weapons in the arsenal
 vn_arsenalShowMelee = 1;
