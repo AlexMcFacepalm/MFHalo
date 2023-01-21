@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1672;
+		nextID=1678;
 	};
 	class LayerIndexProvider
 	{
-		nextID=506;
+		nextID=544;
 	};
 	class Camera
 	{
-		pos[]={9730.2129,25.188719,2017.597};
-		dir[]={0.65436381,-0.40213123,-0.64038944};
-		up[]={0.287402,0.91558206,-0.28126436};
-		aside[]={-0.69943428,-1.4901161e-008,-0.71469712};
+		pos[]={9808.4404,63.373718,1914.5546};
+		dir[]={-0.39451629,-0.47110322,0.7890659};
+		up[]={-0.2106961,0.88205856,0.42141262};
+		aside[]={0.89452398,9.4564166e-007,0.44724354};
 	};
 };
 binarizationWanted=0;
@@ -2495,7 +2495,7 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9717,5.8699999,2034};
-									angle=1.5470072;
+									angle=1.5470068;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
@@ -2513,7 +2513,7 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9717,5.8699999,2073};
-									angle=1.5470072;
+									angle=1.5470068;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
@@ -2531,7 +2531,7 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9716,5.8699999,2113};
-									angle=1.5938518;
+									angle=1.5938514;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
@@ -2549,7 +2549,7 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={9717,5.8699999,2151};
-									angle=1.5470072;
+									angle=1.5470068;
 									class Attributes
 									{
 										onActivation="[thislist] remoteexec [""GOM_fnc_addAircraftLoadoutArea"",[0,-2] select isDedicated]";
@@ -5930,7 +5930,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9805,7.8803792,1908};
+				position[]={9805,7.8803792,1908.25};
 			};
 			side="Empty";
 			flags=5;

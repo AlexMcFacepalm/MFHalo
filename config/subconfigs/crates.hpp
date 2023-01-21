@@ -14,7 +14,7 @@ class MedicalCrate
 class AmmoCrateLight
 {
 	objectClassname = "vn_b_ammobox_supply_01";
-	weapons[] = {{"vn_m127",3}};
+	weapons[] = {{"OPTRE_M7",3},{"OPTRE_MA37",3}};
 	magazines[] = {
 		{"ACRE_PRC343",5},
 		{"ACRE_PRC77",1},
